@@ -1,0 +1,34 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Hachi Maru Pop', cursive;
+
+}
+body{
+	overflow-x: hidden;
+}
+.main-width{
+	width: 1400px;
+	max-width: 95%;
+	margin: 0 auto;
+}
+.hero{
+	height: 100%;
+	width: 100%;
+	min-height: 100vh;
+	background: radial-gradient(#f9d349, 20%, #d57e12);
+	position: relative;
+}
+.hero header .logo h2 a{
+	display: block;
+	font-size: 32px;
+	font-weight: 600;
+	text-decoration: none;
+	color: white;
+}
+.hero header{
+	dispaly: flex;
+	align-items: center;
+	justify-content: space-between;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bias Game</title>
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header>
+   <a href="#" class="logo">TheBiasGame!</a>
+   <ul class="nav">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#games">Games</a></li>
+    <li><a href="#contact">Contact</a></li>
+   </ul>
+   <div class="action">
+     <div class="searchBx">
+      <a href="#"><i class='bx bx-search-alt-2'></i></a>
+      <input type="text" placeholder="Search">
+     </div>
+   </div>
+   <div class="toggleMenu" onclick="toggleMenu();"></div>
+  </header>
+
+  <h1 id="title">The Bias Game!</h1>
+    <!-- Home Banner -->
+  <div class="banner animeX" id="home">
+    <div class="bg">
+      <div class="content">
+          <h2>Help Us<br>
+          Break The Bias!!!</h2>
+          <p>Discover the world of bias in facial recognition technology on our website. Explore the impact of biases on fairness, accuracy, and social equality. Gain knowledge and critical thinking skills to navigate this evolving landscape. Join us in promoting fairness, transparency, and ethical use of facial recognition technology.</p>
+          <a href="landing page.html" class="btn">Play Now!</a>
+      </div>
+      <img src="logo6.png">
+    </div>
+  </div>
+    <!-- About -->
+    <div class="about animeX" id="about">
+      <div class="contentBx">
+        <h2>About Us</h2>
+        <p>Our interactive game website teaches about the impact of bias in facial recognition technology through fun and engaging games, along with links to informative videos and articles. Our expert team is dedicated to creating effective learning experiences and promoting responsible and equitable use of this technology. Explore our games and resources to learn more.
+        </p>
+      </div>
+      <img src="logo7.png">
+    </div>
+
+    <!-- Games And Resources-->
+    <div class="games animeX" id="games">
+      <h2>Games And Resources</h2>
+      <ul>
+        <li class="list active">Quizzes</li>
+        <li class="list">Resources</li>
+      </ul>
+      <div class="cardBx">
+        <div class="card" data-item="pc">
+          <img src="games logo small.png">
+          <div class="content">
+            <h4>Quizzes</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <button type="button" onclick="location.href='landing page.html'">Play Now!</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="pc">
+          <img src="videos logo 2.png">
+          <div class="content">
+            <h4>Resources</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <button type="button" onclick="location.href = 'Resources.html'">Enjoy Now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact animeX" id="contact">
+      <img src="Contact Us.png">
+      <div class="form">
+        <h1>Contact Us</h1>
+        <div class="inputBx">
+          <p>Enter Name</p>
+          <input type="text" placeholder="Full Name">
+        </div>
+        <div class="inputBx">
+          <p>Enter Email</p>
+          <input type="text" placeholder="Full Name">
+        </div>
+        <div class="inputBx">
+          <p>Message</p>
+          <textarea placeholder="Type here..."></textarea>
+        </div>
+        <div class="inputBx">
+          <input type="submit" name="Submit" onclick="location.href='mailto:lilygoloh@gustavus.edu'">
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="info">
+        <a href="#" class="logo">TheBiasGame!</a>
+        <p><i class='bx bx-copyright'></i>2023 All Rights Reserved</p>
+        <ul>
+          <li><a href="https://www.instagram.com/lilyeli_xoxo/"><i class='bx bxl-instagram'></i></a></li>
+          <li><a href="https://accounts.snapchat.com/accounts/welcome"><i class='bx bxl-snapchat'></i></a></li>
+          <li><a href="https://www.tiktok.com/@yahyabashir49?lang=en"><i class='bx bxl-tiktok'></i></a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      /* Sticky NavBar */
+      window.addEventListener('scroll', function(){
+        var header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 0);
+      });
+
+
+      /*Responsive NavBar*/
+      function toggleMenu(){
+        const toggleMenu = document.querySelector('.toggleMenu');
+        const nav = document.querySelector('.nav');
+        toggleMenu.classList.toggle('active')
+        nav.classList.toggle('active')
+      }
+
+      /* Scrolling Animation Effects */
+      window.addEventListener('scroll' ,function(){
+        var anime = document.querySelectorAll('.animeX');
+
+        for(var a = 0; a < anime.length; a++){
+          var windowheight = window.innerHeight;
+          var animetop = anime[a].getBoundingClientRect().top;
+          var animepoint = 150;
+
+
+          if(animetop < windowheight-animepoint){
+            anime[a].classList.add('active');
+          }
+          else{
+            anime[a].classList.remove('active');
+          }
+        }
+      })
+
+    </script>
+</body>
+</html>
