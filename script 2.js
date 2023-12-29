@@ -14,7 +14,17 @@ var questionBank= [
         question : 'Whats Naz dream lifestly?',
         option : ['be a housewife','steal','beat up men'],
         answer : 'be a housewife'
-    }
+    },
+	
+    {
+        question : 'how many hours does Naz sleep?',
+        option : ['5hrs','0','10+'],
+        answer : '10+'
+    },
+    {
+        question : 'is Naz a bum?',
+        option : ['maybe','very much','no'],
+        answer : 'very much'
     
 ]
 
