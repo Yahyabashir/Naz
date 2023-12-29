@@ -25,6 +25,7 @@ var questionBank= [
         question : 'is Naz a bum?',
         option : ['maybe','very much','no'],
         answer : 'very much'
+    }		
     
 ]
 
