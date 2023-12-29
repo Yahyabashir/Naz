@@ -1,30 +1,21 @@
 //Question bank
 var questionBank= [
     {
-        question : 'What is facial recognition technology, and how is it commonly used?',
-        option : ['Identifies individuals based on facial features',' Analyzes facial expressions','Enhances facial features in photographs'],
-        answer : 'Identifies individuals based on facial features'
+        question : 'What kind of Naz do we like?',
+        option : ['sassy','cool','mad'],
+        answer : 'cool'
     },
     {
-        question : 'Can facial recognition technology be biased? If so, why?',
-        option : ['Yes, because it relies on subjective human judgments','Yes, because it can be influenced by societal biases in the training data','No, facial recognition technology is completely objective'],
-        answer : 'Yes, because it can be influenced by societal biases in the training data'
+        question : 'Does Naz like matcha?',
+        option : ['Yes','maybe','No'],
+        answer : 'Yes'
     },
     {
-        question : 'What are some potential consequences of biased facial recognition technology?',
-        option : ['Misidentification and false accusations','Privacy invasion and data breaches','Improved accuracy in identifying individuals'],
-        answer : 'Misidentification and false accusations'
-    },
-    {
-        question : 'Which factors can contribute to bias in facial recognition algorithms?',
-        option : ['Insufficient computational power','Lack of diverse training data','Excessive reliance on user input'],
-        answer : 'Lack of diverse training data'
-    },
-    {
-        question : 'How can bias in facial recognition technology affect different racial or ethnic groups?',
-        option : ['It can result in higher accuracy for all groups','It can lead to disproportionate misidentification of certain groups','It has no impact on different racial or ethnic groups'],
-        answer : 'It can lead to disproportionate misidentification of certain groups'
+        question : 'Whats Naz dream lifestly?',
+        option : ['be a housewife','steal','beat up men'],
+        answer : 'be a housewife'
     }
+    
 ]
 
 /*var score = 0;
