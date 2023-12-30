@@ -6,13 +6,13 @@ var questionBank= [
         answer : 'cool'
     },
     {
-        question : 'Does Naz like matcha?',
+        question : 'Does Naz like machiato?',
         option : ['Yes','maybe','No'],
         answer : 'Yes'
     },
     {
-        question : 'Whats Naz dream lifestly?',
-        option : ['be a housewife','steal','beat up men'],
+        question : 'Whats Naz dream lifestyle?',
+        option : ['be a housewife','become a scammer','beat up men'],
         answer : 'be a housewife'
     },
 	
@@ -22,9 +22,9 @@ var questionBank= [
         answer : '10+'
     },
     {
-        question : 'is Naz a bum?',
-        option : ['maybe','very much','no'],
-        answer : 'very much'
+        question : 'does Naz need to stop ignoring people?',
+        option : ['maybe','yessss!!','no'],
+        answer : 'yessss!!'
     }		
     
 ]
